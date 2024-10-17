@@ -8,10 +8,7 @@
   .container .header {
     width: 100%;
     height: 100%;
-    padding: 0 8px;
-    position: sticky;
-    top: 0;
-    z-index: 999;
+    padding: 10px;
   }
 
   .header .left {
@@ -19,8 +16,9 @@
   }
 
   .header .left .logo {
+    display: flex;
+    width: 30%;
     justify-content: flex-start;
-    gap: 8px;
   }
 
   .logo .img {
@@ -36,6 +34,7 @@
   .logo .logo_name {
     width: 80px;
     height: 30px;
+    display: none;
   }
 
   .logo_name h1 {
@@ -46,8 +45,7 @@
   .hamburger_menu {
     width: 20px;
     height: 20px;
-    margin-left: 0;
-    /* border: 1px solid red; */
+    margin-left: 20px;
   }
 
   .hamburger_menu .line {
@@ -66,13 +64,12 @@
     width: 100%;
     display: flex;
     align-items: center;
-    /* border: 1px solid red; */
     margin-right: 10%;
   }
 
   .left .name h2 {
     font-size: 12px;
-    width: 60%;
+    /* width: 60%; */
     line-height: 1;
   }
 
@@ -107,13 +104,12 @@
     height: 100%;
     margin-left: 0;
     padding: 0 10px;
-    /* border: 1px solid red; */
   }
 
   .top_section {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid red; */
+    padding: 10px;
   }
 
   .top_section .prescription_page {
@@ -123,9 +119,8 @@
   }
 
   .top_section .bread_crumb {
-    /* border: 1px solid red; */
     display: flex;
-    margin-left: 38%;
+    margin-left: 30%;
     margin-top: 20px;
   }
 
@@ -148,12 +143,18 @@
 
   .lower_section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 5px;
   }
 
+  .prescribed_drugs_table {
+    height: 390px;
+  }
+
   .prescribe-drug-grid {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 220px 220px 80px 100px 100px 130px;
+    padding: 10px;
+    gap: 10px;
   }
 
   table {
@@ -180,21 +181,23 @@
     font-weight: 600;
   }
 
-  .section_after_table {
+  .done_prescription_btn {
     width: 100%;
-    height: 100%;
-    /* background: red; */
+    margin-bottom: 20px;
   }
 
-  .section_after_table .input_boxes {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 10px;
+  .remark_section .form-group {
+    width: 45%;
+  }
+
+  /* .section_after_table {
+    width: 100%;
+    height: 100%;
   }
 
   .section_after_table .input_boxes input {
     width: 100%;
-  }
+  } */
 
   .search_med_brand .suggestion_card {
     width: 100%;
@@ -227,8 +230,6 @@
     width: 100%;
     margin-left: 0;
     flex-direction: column;
-    /* display: none; */
-    /* visibility: hidden; */
   }
 
   .footer_section .left span {
@@ -238,7 +239,7 @@
   }
 
   .footer_section .right ul li a {
-    font-size: 0.8rem;
+    font-size: 0.60rem;
     line-height: 1;
   }
 
