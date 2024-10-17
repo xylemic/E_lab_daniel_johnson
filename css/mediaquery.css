@@ -1,0 +1,308 @@
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .header {
+    width: 100%;
+    height: 100%;
+    padding: 0 8px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+
+  .header .left {
+    width: 100%;
+  }
+
+  .header .left .logo {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .logo .img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo .img img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .logo .logo_name {
+    width: 100px;
+    height: 40px;
+  }
+
+  .logo_name h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .hamburger_menu {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    /* border: 1px solid red; */
+  }
+
+  .hamburger_menu .line {
+    width: 20px;
+    height: 3px;
+    margin-bottom: 5px;
+  }
+
+  .line2 {
+    width: 12px;
+    height: 3px;
+    margin-bottom: 5px;
+  }
+
+  .left .name {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .left .name h2 {
+    font-size: 15px;
+  }
+
+  .main_section .left_sidebar {
+    display: none;
+  }
+
+  .user_profile span {
+    display: none;
+  }
+
+  .user_section .arrow_down {
+    display: none;
+  }
+
+  .right .user_section {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .user_section .notif_bell img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .user_section .user_profile img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .main_section .content_area {
+    width: 100%;
+    height: 1100px;
+    margin-left: 0;
+    padding: 10px 20px 10px 10px;
+  }
+
+  .top_section .prescription_page {
+    width: 50%;
+    font-size: 1rem;
+  }
+
+  .top_section .bread_crumb {
+    /* border: 1px solid red; */
+    margin-left: 8%;
+  }
+
+  .top_section .bread_crumb .forward_arr {
+    width: 8px;
+    margin-right: 10px;
+  }
+
+  .bread_crumb .home,
+  .page1 {
+    font-size: 0.9rem;
+    line-height: 1;
+  }
+
+  .bread_crumb .page2 {
+    font-size: 0.9rem;
+    line-height: 1;
+  }
+
+  .lower_section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+
+  .prescribed_drugs_table {
+    width: 100%;
+    /* border-collapse: collapse; */
+  }
+
+  table th {
+    font-size: 0.80rem;
+    line-height: 1;
+    /* width: 100%; */
+  }
+
+  tbody {
+    width: 100%;
+  }
+
+  tbody td {
+    font-size: 0.80rem;
+    line-height: 1;
+  }
+
+  .action-btn {
+    margin-left: 0;
+    font-weight: 600;
+  }
+
+  .section_after_table {
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+  }
+
+  .section_after_table .input_boxes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+  }
+
+  .section_after_table .input_boxes input {
+    width: 100%;
+  }
+
+  .search_med_brand .suggestion_card {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .input_boxes label {
+    font-size: 0.8rem;
+    line-height: 1;
+    margin: 8px 0;
+  }
+
+  .input_boxes .add_btn button {
+    width: 100%;
+    height: 40px;
+  }
+
+
+  footer {
+    margin-top: 430px;
+    padding: 10px;
+    width: 100%;
+    height: 180px;
+    position: static;
+    z-index: auto;
+    box-shadow: -1px 0px 6px 5px #e5e5e5;
+  }
+
+  footer .footer_section {
+    width: 100%;
+    margin-left: 0;
+    flex-direction: column;
+    /* display: none; */
+    /* visibility: hidden; */
+  }
+
+  .footer_section .left span {
+    font-size: 0.8rem;
+    line-height: 1;
+    margin-right: 0;
+  }
+
+  .footer_section .right ul li a {
+    font-size: 0.8rem;
+    line-height: 1;
+  }
+
+  footer button {
+    margin-left: 0;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: .90rem;
+  }
+}
+
+/* @media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+
+  .container .header {
+    width: 100%;
+    padding: 0 8px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+
+  .left .name h2 {
+    font-size: 1.4rem;
+  }
+
+  .header .right {
+    width: 100%;
+  }
+
+  .user_section .arrow_down {
+    visibility: hidden;
+  }
+
+  .user_profile span {
+    font-size: 1rem;
+  }
+
+  .main_section .left_sidebar {
+    display: none;
+  }
+
+  .main_section .content_area {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  footer {
+    margin-top: 60px;
+    padding: 10px;
+    width: 100%;
+    height: 180px;
+    position: static;
+    z-index: auto;
+    box-shadow: -1px 0px 6px 5px #e5e5e5;
+  }
+
+  footer .footer_section {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .footer_section .left span {
+    font-size: 1.1rem;
+    line-height: 1;
+    margin-right: 10px;
+  }
+
+  .footer_section .right ul li a {
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+
+  footer button {
+    margin-left: 0;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: .90rem;
+  }
+} */
