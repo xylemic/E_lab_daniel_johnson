@@ -20,12 +20,12 @@
 
   .header .left .logo {
     justify-content: flex-start;
-    gap: 10px;
+    gap: 8px;
   }
 
   .logo .img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 
   .logo .img img {
@@ -34,19 +34,19 @@
   }
 
   .logo .logo_name {
-    width: 100px;
-    height: 40px;
+    width: 80px;
+    height: 30px;
   }
 
   .logo_name h1 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1rem;
+    line-height: 20px;
   }
 
   .hamburger_menu {
     width: 20px;
     height: 20px;
-    margin: 0 10px;
+    margin-left: 0;
     /* border: 1px solid red; */
   }
 
@@ -66,10 +66,14 @@
     width: 100%;
     display: flex;
     align-items: center;
+    /* border: 1px solid red; */
+    margin-right: 10%;
   }
 
   .left .name h2 {
-    font-size: 15px;
+    font-size: 12px;
+    width: 60%;
+    line-height: 1;
   }
 
   .main_section .left_sidebar {
@@ -86,9 +90,6 @@
 
   .right .user_section {
     width: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
   }
 
   .user_section .notif_bell img {
@@ -103,30 +104,41 @@
 
   .main_section .content_area {
     width: 100%;
-    height: 1100px;
+    height: 100%;
     margin-left: 0;
-    padding: 10px 20px 10px 10px;
+    padding: 0 10px;
+    /* border: 1px solid red; */
+  }
+
+  .top_section {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
   }
 
   .top_section .prescription_page {
-    width: 50%;
-    font-size: 1rem;
+    font-size: .90rem;
+    line-height: 20px;
+    margin-top: 5%;
   }
 
   .top_section .bread_crumb {
     /* border: 1px solid red; */
-    margin-left: 8%;
+    display: flex;
+    margin-left: 38%;
+    margin-top: 20px;
   }
 
   .top_section .bread_crumb .forward_arr {
-    width: 8px;
+    width: 6px;
+    height: 6px;
     margin-right: 10px;
   }
 
   .bread_crumb .home,
   .page1 {
     font-size: 0.9rem;
-    line-height: 1;
+    line-height: 10px;
   }
 
   .bread_crumb .page2 {
@@ -136,13 +148,16 @@
 
   .lower_section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 5px;
   }
 
-  .prescribed_drugs_table {
+  .prescribe-drug-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  table {
     width: 100%;
-    /* border-collapse: collapse; */
   }
 
   table th {
@@ -199,7 +214,7 @@
 
 
   footer {
-    margin-top: 430px;
+    margin-top: 100px;
     padding: 10px;
     width: 100%;
     height: 180px;
